@@ -1,0 +1,45 @@
+import java.util.*;
+
+public class Arrays {
+    public static void main (String[] args) {
+        int arr[] = {40, 10, 20, 30};
+        int n = arr.length;
+        int sorted[]= new int [n];
+        // store the original array
+        for (int i = 0; i < n; i++){
+            sorted[i] = arr[i];
+        }
+        
+
+        for (int i = 0; i < n-1; i++) {
+            int minIndex = i;
+
+            // Find the index of the smallest element
+            for (int j = i + 1; j < n; j++) {
+                if (sorted[j] < sorted[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            // Swap the found smallest with the first element of unsorted part
+            
+                int temp = sorted[i];
+                sorted[i] = sorted[minIndex];
+                sorted[minIndex] = temp;
+               
+                
+        } 
+        for (int i = 0; i < n; i++ ){
+            for (int j = 0; i < n; j++){
+                if (arr[i] == sorted[j]){
+                    System.out.print((j+1) + " ");
+                    break;
+                    
+                }
+                
+            }
+        }      
+    
+    }
+
+}
