@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Arrays {
+    public static void main (String[] args) {
+        int arr[] = {8, 4, 1, 7, 2};
+        int n = arr.length;
+        int k = 3;
+
+        for (int i = 0; i < k; i++) {
+            int minIndex = i;
+
+            // Find the index of the smallest element
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            // Swap the found smallest with the first element of unsorted part
+            
+                int temp = arr[i];
+                arr[i] = arr[minIndex];
+                arr[minIndex] = temp;
+            }
+            System.out.print("kth element is: " + arr[k -1]);
+    }
+        
+}
