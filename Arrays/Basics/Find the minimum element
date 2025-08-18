@@ -1,0 +1,12 @@
+class Main {
+    public static void main(String[] args) {
+        int arr[] = {1, 5, 5, 7, 9};
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i <= arr.length-1; i++){
+            if(min > arr[i]){
+                min = arr[i];
+            }
+        }
+        System.out.println("The maximum element is =" +" "+ min);
+    }
+}
