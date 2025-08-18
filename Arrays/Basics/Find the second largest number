@@ -1,0 +1,25 @@
+class Main {
+    public static void main(String[] args) {
+        int arr[] = {5, 8, 8, 6};
+        int largest = Integer.MIN_VALUE;
+        int SecondLargest = Integer.MIN_VALUE;
+        // 🔴Find Largest
+        for(int i = 0; i <= arr.length-1; i++){
+            if(arr[i] > largest){
+                largest = arr[i];
+            }
+        }
+        //🔴 Find second largest comparing with largest
+        for(int i = 0; i <= arr.length-1; i++){
+            if(arr[i] > SecondLargest && arr[i] != largest){
+                SecondLargest= arr[i];
+            }
+        }
+        if(SecondLargest == Integer.MIN_VALUE){
+            System.out.println("There is no second largest element");
+        }else{
+            System.out.println("Largest element :" + largest);
+            System.out.println("Second largest element :" + SecondLargest);
+        }
+    }
+}
