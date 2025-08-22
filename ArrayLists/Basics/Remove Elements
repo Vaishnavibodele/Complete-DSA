@@ -1,0 +1,11 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String>fruits = new ArrayList<>();
+        fruits.add("apple");
+        fruits.add("banana");
+        fruits.add("cherry");
+        fruits.remove(2);
+        
+        System.out.println("Fruits:" + fruits);
+    }
