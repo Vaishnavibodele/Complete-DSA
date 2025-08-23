@@ -1,0 +1,20 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer>lists = new ArrayList<>();
+        lists.add(4);
+        lists.add(6);
+        lists.add(9);
+        lists.add(2);
+        lists.add(8);
+        lists.add(0);
+        lists.add(1);
+        lists.add(5);
+        int max = Collections.max(lists);
+        int min = Collections.min(lists);
+        
+        
+        System.out.println("Maximum is: " + max);
+        System.out.println("Minimum is: " + min);
+    }
+}
