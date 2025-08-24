@@ -1,0 +1,18 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(10, 15, 20, 25, 30, 35, 40));
+
+        System.out.println("Original List: " + numbers);
+
+        ArrayList<Integer> oddNumbers = new ArrayList<>();
+        for (int num : numbers) {
+            if (num % 2 != 0) {
+                oddNumbers.add(num);
+            }
+        }
+
+        System.out.println("After Removing Even Numbers: " + oddNumbers);
+    }
+}
