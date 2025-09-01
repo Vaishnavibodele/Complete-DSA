@@ -1,0 +1,13 @@
+class Main {
+    public static void main(String[] args) {
+        LinkedList<String> students = new LinkedList<>();
+        
+        students.add("Alice");
+        students.add("Bob");
+        students.add("Charlie");
+        students.add("Dave");
+        students.add("Eva");
+        
+        System.out.println("Students:" + students);
+    }
+}
